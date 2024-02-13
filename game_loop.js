@@ -1,6 +1,6 @@
 let lastFrameTime = 0.0;
 let time_count = 0;
-let update_rate = 80;	// m/s
+let update_rate = 100;	// m/s
 
 let delta_count = 0;
 

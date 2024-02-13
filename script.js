@@ -158,23 +158,23 @@ function Draw(){
 function On_Key_Down(E){
 	if(button_pressed) return 0;
 	
-	if(E.key == "w" || E.key == "W"){
+	if(E.key == "w" || E.key == "W" || E.key == "ArrowUp"){
 		if(direction.y != 1){
 			direction.x = 0;
 			direction.y = -1;
 		}
-	}else if(E.key == "s" || E.key == "S"){
+	}else if(E.key == "s" || E.key == "S" || E.key == "ArrowDown"){
 		if(direction.y != -1){
 			direction.x = 0;
 			direction.y = 1;
 		}
 	}
-	if(E.key == "d" || E.key == "D"){
+	if(E.key == "d" || E.key == "D" || E.key == "ArrowRight"){
 		if(direction.x != -1){
 			direction.y = 0;
 			direction.x = 1;
 		}
-	}else if(E.key == "a" || E.key == "A"){
+	}else if(E.key == "a" || E.key == "A" ||  E.key == "ArrowLeft"){
 		if(direction.x != 1){
 			direction.y = 0;
 			direction.x = -1;
