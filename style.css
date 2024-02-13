@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+	image-rendering: pixelated;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	
+	height: 100%;
+	display: flex;
+	
+	color: rgb(52, 67, 7);
+	font-family: Sans-serif;
+}
+
+#main {
+	width: auto;
+	height: 100%;
+	
+	display: flex;
+	
+	position: relative;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+#my-canvas {
+	width: auto;
+	height: 100%;
+	background-color: white;
+}
+
+#start-game {
+	position: fixed;
+	z-index: 1;
+	width: 300px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	background-color: rgb(111, 142, 15);
+	border: 2px solid rgb(52, 67, 7);
+}
+
+#game-over {
+	position: fixed;
+	z-index: 1;
+	width: 300px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	background-color: rgb(111, 142, 15);
+	border: 2px solid rgb(52, 67, 7);
+	display: none;
+}
+
+#try-button {
+	width: 140px;
+	padding: 12px;
+	border: 2px solid rgb(52, 67, 7);
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+#try-button:hover {
+	border-style: dashed;
+	cursor: pointer;
+}
+
+#start-button {
+	width: 140px;
+	padding: 12px;
+	border: 2px solid rgb(52, 67, 7);
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+#start-button:hover {
+	border-style: dashed;
+	cursor: pointer;
+}
+
+#pun {
+	text-decoration-line: underline;
+	color: rgb(52, 67, 7);
+}
+
+#pun a {
+	color: rgb(52, 67, 7);
+}

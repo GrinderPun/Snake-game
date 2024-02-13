@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Snake!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<meta charset="utf-8" />
+		<meta name="description" content="Snake eats food, WASD to move." />
+		<meta name="theme-color" content="#2B2D31" />
+		
+		<meta property="og:title" content="Snake! 🐍" />
+		<meta property="og:description" content="Snake eats food, WASD to move." />
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="" />
+		
+		<meta property="og:image" content="snake.png" />
+		<meta property="og:image:secure_url" content="snake.png" />
+		<meta property="og:image:alt" content="Snake! 🐍" />
+		<meta property="og:image:type" content="image/png" />
+		
+		<!-- Include this to make the og:image larger -->
+		<meta name="twitter:card" content="summary_snake" />
+		<meta name="twitter:site" content="@GrinderPun" />
+		<meta name="twitter:title" content="Grinder Pun" />
+		<meta name="twitter:description" content="Snake eats food, WASD to move." />
+		<meta name="twitter:image" content="https://grinderpun.com/graphic/icon.png" />
+		
+		<meta name="thumbnail" content="https://grinderpun.com/graphic/icon.png" />
+		
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body>
+		<div id="game-over">
+			<h1>GAME OVER</h1>
+			<h2>Score:</h2>
+			<h3 id="my-score">121</h3>
+			<h3 id="try-button" onclick="Start_Game()">Try Again</h3>
+		</div>
+		
+		<div id="start-game">
+			<h1 style="font-size: 50px;">🐍</h1>
+			<h1 style="font-size: 47px;">Snake!</h1>
+			<h3 id="start-button" onclick="Start_Game()">Start</h3>
+			<p>Created by <span id="pun"><a target="_blank" href="https://www.instagram.com/grinder_pun">Grinder Pun</a></span>.</p>
+		</div>
+		
+		<div id="main">
+			<canvas id="my-canvas" width="512" height="512"></canvas>
+		</div>
+		
+		<script src="canvas.js"></script>
+		<script src="script.js"></script>
+		<script src="game_loop.js"></script>
+	</body>
+</html>
